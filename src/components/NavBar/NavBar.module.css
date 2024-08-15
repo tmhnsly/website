@@ -1,0 +1,19 @@
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-thumb);
+  backdrop-filter: var(--backdrop-filter-panel);
+  background-color: var(--color-panel-translucent);
+
+  &:hover {
+    background-color: var(--accent-a3);
+  }
+}

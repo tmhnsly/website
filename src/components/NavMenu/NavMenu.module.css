@@ -1,0 +1,5 @@
+.content {
+  padding: 0;
+  background-color: var(--color-panel-translucent);
+  backdrop-filter: var(--backdrop-filter-panel);
+}

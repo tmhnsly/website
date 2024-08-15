@@ -52,7 +52,7 @@ export default async function BlogPage() {
                     key={post._id}
                     eyebrow={formatDate(post._createdAt)}
                     heading={post?.title}
-                    imageUrl={urlFor(post.thumbnail).url()}
+                    imageUrl={urlFor(post.thumbnail ?? null)}
                   />
                 )
             )}

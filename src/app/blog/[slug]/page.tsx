@@ -34,7 +34,7 @@ export default async function BlogPostPage({
 
   const { title, content, _createdAt, thumbnail } = post;
 
-  const image = urlFor(thumbnail).url();
+  const imageUrl = urlFor(thumbnail);
 
   // TODO:
 
@@ -57,7 +57,7 @@ export default async function BlogPostPage({
           left: "-32px",
           right: "-32px",
           bottom: "-32px",
-          backgroundImage: `url(${image})`,
+          backgroundImage: `url(${imageUrl})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -103,7 +103,7 @@ export default async function BlogPostPage({
                   }}
                 >
                   <Image
-                    src={image}
+                    src={imageUrl}
                     alt={`Thumbnail for ${post.title}`}
                     objectFit="cover"
                     fill
